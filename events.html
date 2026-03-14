@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>P.E.O. Chapter CF - Events</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="events.css" rel="stylesheet">
+        <meta author="Susan Davis">
+    </head>
+    <body>
+        <header>
+            <img src="Images/P.E.O. Primary Logo - PNG.png" alt="P.E.O. Logo">
+            <h1>Chapter CF Fun Committee</h1>
+            <h2>P.E.O. Arizona</h2>
+            <p>Come join us for fun, fellowship, and connection</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#upcoming">Upcoming Events</a></li>
+                    <li><a href="members.html">Member Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="eventsMain">
+            <section id="upcoming">
+                <h2>Upcoming Events</h2>
+                <p>Click <strong>Register</strong> on any event to save your spot!</p>
+
+                <div class="events-grid">
+
+                    <!-- Coffee Meetup -->
+                    <article class="event-card" id="evt-coffee">
+                        <div class="event-badge">Coffee</div>
+                        <div class="event-icon">☕</div>
+                        <h3>Coffee Time</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 April 5, 2026</span>
+                            <span class="event-time">⏰ 10:00 AM – 12:00 PM</span>
+                            <span class="event-location">📍 The Daily Grind Café, Scottsdale</span>
+                        </div>
+                        <p class="event-desc">Join your sisters for caffeine and conversation at our favorite local coffee spot. All are welcome — bring a friend!</p>
+                        <button class="register-btn" data-event="Coffee Time – April 5">Register Now</button>
+                    </article>
+
+                    <!-- Trivia Night -->
+                    <article class="event-card" id="evt-trivia">
+                        <div class="event-badge">Online</div>
+                        <div class="event-icon">🧠</div>
+                        <h3>Trivia Night</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 April 8, 2026</span>
+                            <span class="event-time">⏰ 7:00 PM – 9:00 PM</span>
+                            <span class="event-location">💻 Virtual – Zoom Link Provided</span>
+                        </div>
+                        <p class="event-desc">Test your knowledge every second Tuesday online. Categories include history, pop culture, and P.E.O. fun facts!</p>
+                        <button class="register-btn" data-event="Trivia Night – April 8">Register Now</button>
+                    </article>
+
+                    <!-- Serving Together -->
+                    <article class="event-card" id="evt-serving">
+                        <div class="event-badge">Service</div>
+                        <div class="event-icon">🤝</div>
+                        <h3>Serving with Sisters</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 April 12, 2026</span>
+                            <span class="event-time">⏰ 9:00 AM – 1:00 PM</span>
+                            <span class="event-location">📍 Desert Mission Food Bank, Phoenix</span>
+                        </div>
+                        <p class="event-desc">One Saturday a month, we roll up our sleeves and serve our community side by side. A rewarding morning with wonderful women.</p>
+                        <button class="register-btn" data-event="Serving with Sisters – April 12">Register Now</button>
+                    </article>
+
+                    <!-- Coffee Meetup May -->
+                    <article class="event-card" id="evt-coffee2">
+                        <div class="event-badge">Coffee</div>
+                        <div class="event-icon">☕</div>
+                        <h3>Coffee Time</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 May 3, 2026</span>
+                            <span class="event-time">⏰ 10:00 AM – 12:00 PM</span>
+                            <span class="event-location">📍 Perk Up Coffee, Tempe</span>
+                        </div>
+                        <p class="event-desc">Our monthly coffee date moves to Tempe this month! New location, same great sisterhood. All welcome.</p>
+                        <button class="register-btn" data-event="Coffee Time – May 3">Register Now</button>
+                    </article>
+
+                    <!-- Trivia Night May -->
+                    <article class="event-card" id="evt-trivia2">
+                        <div class="event-badge">Online</div>
+                        <div class="event-icon">🧠</div>
+                        <h3>Trivia Night</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 May 13, 2026</span>
+                            <span class="event-time">⏰ 7:00 PM – 9:00 PM</span>
+                            <span class="event-location">💻 Virtual – Zoom Link Provided</span>
+                        </div>
+                        <p class="event-desc">May's theme: Spring Fling! Categories include nature, travel, movies from the 80s, and more. Log in and play!</p>
+                        <button class="register-btn" data-event="Trivia Night – May 13">Register Now</button>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Registration Modal -->
+        <div id="regModal" class="modal-overlay" aria-hidden="true">
+            <div class="modal-box" role="dialog" aria-labelledby="modalTitle">
+                <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+                <h2 id="modalTitle">Register for Event</h2>
+                <p id="modalEventName" class="modal-event-name"></p>
+                <form id="regForm" method="post" action="https://wp.zybooks.com/form-viewer.php">
+                    <label for="regName">Name*</label>
+                    <input type="text" id="regName" name="regName" required placeholder="First and last name">
+
+                    <label for="regEmail">Email*</label>
+                    <input type="email" id="regEmail" name="regEmail" required placeholder="you@domain.com">
+
+                    <label for="regPhone">Phone</label>
+                    <input type="tel" id="regPhone" name="regPhone" placeholder="Phone number">
+
+                    <label for="regGuests">Number of Guests (including yourself)*</label>
+                    <select id="regGuests" name="regGuests" required>
+                        <option value="1" selected>1 – Just me</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                    </select>
+
+                    <label for="regComments">Special notes or questions</label>
+                    <textarea id="regComments" name="regComments" placeholder="Anything we should know?"></textarea>
+
+                    <input type="hidden" id="regEventField" name="regEvent" value="">
+                    <input type="submit" value="Complete Registration" id="regSubmit">
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p><span>P.E.O. Chapter CF</span> Copyright &copy;2026 - All Rights Reserved</p>
+        </footer>
+
+        <script src="events.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>P.E.O. Chapter CF Fun Committee</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <meta author="Susan Davis"> 
+    </head>
+    <body>
+        <header>
+            <img src="Images/P.E.O. Primary Logo - PNG.png" alt="P.E.O. Logo">
+            <h1>Chapter CF Fun Committee</h1>
+            <h2>P.E.O. Arizona</h2>
+            <p>Come join us for fun, fellowship, and connection</p>
+            <div class="header-divider" aria-hidden="true">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <nav>
+                <ul>
+                    <li><a href="#snakeEyes">Snake Eyes</a></li>
+                    <li><a href="#magic8">Magic 8-Ball</a></li>
+                    <li><a href="#guessing">Number Guess</a></li>
+                    <li><a href="#coinFlip">Coin Flip</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="members.html">Member Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="gamesIntro">
+                <h2>Play a Game!</h2>
+                <p>Take a little break and have some fun with your sisters. We've got four games to keep you entertained — come back and play anytime!</p>
+            </section>
+            <div class="games-grid">
+             <section id="snakeEyes">
+		        <h2>Snake Eyes Game</h2>
+		        <p>Click the button to generate two random numbers. Your goal is to roll two ones (snake eyes)!</p>
+		        <span id="random1"></span>
+		        <span id="random2"></span>
+		        <p id="snakeEyesMsg"></p>
+		        <button id="gamePlay">Play!</button>
+	        </section>
+            <!-- Magic 8-Ball -->
+            <section id="magic8">
+                <h2>Magic 8-Ball</h2>
+                <p>Ask a yes/no question, then shake the ball for your answer!</p>
+                <div id="eightBall">8</div>
+                <p id="eightBallAnswer"></p>
+                <button id="shakeBtn">Shake!</button>
+            </section>
+
+            <!-- Number Guessing Game -->
+            <section id="guessing">
+                <h2>Number Guessing Game</h2>
+                <p>I'm thinking of a number between 1 and 20. Can you guess it?</p>
+                <p id="guessResult">&nbsp;</p>
+                <p id="guessCount">&nbsp;</p>
+                <input type="number" id="guessInput" min="1" max="20" placeholder="Enter 1–20">
+                <div class="game-btns">
+                    <button id="guessBtn">Guess!</button>
+                    <button id="resetGuess">New Game</button>
+                </div>
+            </section>
+
+            <!-- Coin Flip -->
+            <section id="coinFlip">
+                <h2>Coin Flip</h2>
+                <p>Heads or tails? Flip the coin and find out!</p>
+                <div id="coin" class="coin-idle">🪙</div>
+                <p id="coinResult">&nbsp;</p>
+                <div class="game-btns">
+                    <button id="headsBtn">Heads</button>
+                    <button id="tailsBtn">Tails</button>
+                </div>
+                <p id="coinScore">Wins: 0 &nbsp;|&nbsp; Losses: 0</p>
+            </section>
+            </div>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <h3>Want to join us? Send us a message, and we'll get back to you soon!</h3>
+                    <p>Items marked with an *asterisk are required</p>
+
+                <div id="formSuccess" hidden style="text-align:center; padding: 2rem;">
+                    <p style="font-size:3rem; color: var(--gold);">✦ Thank You! ✦</p>
+                    <p>Your message has been sent. We look forward to connecting with you soon, sister!</p>
+                </div>
+                <form method="post" action="https://wp.zybooks.com/form-viewer.php" id="contactForm">
+                    <div>
+                        <label for="myName">Name*</label>
+                        <input type="text" name="myName" id="myName" required placeholder="Enter first and last name">
+                        
+                        <label for="myAddress">Address</label>
+                        <input type="text" name="myAddress" id="myAddress" placeholder="Street Address">
+                        
+                        <label for="myCity">City</label>
+                        <input type="text" name="myCity" id="myCity" placeholder="City">
+                        
+                        <label for="myState">State</label> 
+                        <select size="1" name="myState" id="myState">
+                            <option value="" selected="selected">Select a State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="myPhone">Phone*</label>
+                        <input type="tel" name="myPhone" id="myPhone" required placeholder="Phone">
+                        
+                        <label for="myEmail">Email*</label>
+                        <input type="email" name="myEmail" id="myEmail" required placeholder="you@domain.com">
+                        
+                        <fieldset>
+                            <legend>Preferred Method of Contact*</legend>
+                            <div class="radio-group">
+                                <input type="radio" name="prefContact" id="prefPhone" value="Phone" required checked>
+                                <label for="prefPhone">Phone</label>
+                                <input type="radio" name="prefContact" id="prefEmail" value="Email">
+                                <label for="prefEmail">Email</label>
+                            </div>
+                        </fieldset>
+                       
+                        <label for="myComments" id="commentsArea">Comments*</label>
+                        <textarea name="myComments" id="myComments" required placeholder="Tell us about yourself and how you heard about Chapter CF. We'd love to know a little about you!"></textarea>
+                    </div>
+                    <input type="submit" id="mySubmit" value="Submit">
+                </form>
+            </section>
+        </main>
+    </body>
+    <footer>
+        <p class="footer-motto">"We are sisters bound by a love of learning and a love of each other."</p>
+        <hr class="footer-divider" aria-hidden="true">
+        <p><span>P.E.O. Chapter CF &nbsp;·&nbsp; P.E.O. Arizona</span></p>
+        <p><span>Copyright &copy;2026 &nbsp;·&nbsp; All Rights Reserved</span></p>
+    </footer>
+</html>
