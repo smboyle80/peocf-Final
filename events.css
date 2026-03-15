@@ -211,7 +211,10 @@
 }
 
 .modal-box select {
-    height: 3rem;
+    height: auto;
+    padding: 0.6rem 0.8rem;
+    font-family: var(--body-fonts);
+    font-size: 2rem;
 }
 
 .modal-box textarea {

@@ -162,25 +162,87 @@ h3{
     margin: 2rem 0.25rem 1rem 0.25rem;
 }
 
-nav{
+nav {
     width: 100%;
     margin: 0 auto;
     border-top: 1px solid var(--lt-burgundy);
 }
 
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        padding: 4px 0;
-        gap: 2px;
-    }
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 4px 0;
+    gap: 2px;
+    list-style: none;
+}
 
-    nav ul li {
-        flex: 1 1 auto;
-        min-width: 10rem;
-    }
+nav > ul > li {
+    flex: 1 1 auto;
+    min-width: 10rem;
+    position: relative;
+}
+
+/* Dropdown trigger */
+.nav-dropdown > .nav-parent {
+    display: block;
+    color: var(--burgundy);
+    padding: 0.6rem 0.4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.18s, color 0.18s;
+}
+
+.nav-dropdown:hover > .nav-parent,
+.nav-dropdown:focus-within > .nav-parent {
+    background-color: var(--burgundy);
+    color: var(--gold);
+}
+
+/* Submenu */
+.nav-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    border: 1px solid rgba(123,17,58,0.3);
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    min-width: 16rem;
+    z-index: 100;
+    list-style: none;
+    padding: 0.4rem 0;
+}
+
+.nav-dropdown:hover .nav-submenu,
+.nav-dropdown:focus-within .nav-submenu {
+    display: block;
+}
+
+.nav-submenu li a {
+    display: block;
+    color: var(--burgundy);
+    font-size: 1.8rem;
+    padding: 0.6rem 1.4rem;
+    text-align: left;
+    border-radius: 0;
+    white-space: nowrap;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.nav-submenu li a:hover,
+.nav-submenu li a:focus {
+    background-color: var(--burgundy);
+    color: var(--gold);
+}
+
+.nav-submenu li:first-child a { border-radius: 6px 6px 0 0; }
+.nav-submenu li:last-child  a { border-radius: 0 0 6px 6px; }
 
 
 a{
@@ -381,6 +443,200 @@ button:hover, button:focus {
     font-size: 3rem !important;
     min-height: 1.5em;
     padding: 0.25rem !important;
+}
+
+
+
+/* ---- Hangman ---- */
+#hangmanDrawing {
+    margin: 0.5rem auto;
+    width: 12rem;
+}
+
+#hangmanSvg {
+    width: 100%;
+    height: auto;
+    color: var(--white);
+    display: block;
+}
+
+#hangmanWord {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1rem auto 0.5rem;
+}
+
+.hm-letter {
+    display: inline-block;
+    width: 2.8rem;
+    height: 3.2rem;
+    border-bottom: 3px solid var(--gold);
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: var(--header-fonts);
+    font-weight: bold;
+    color: var(--white);
+    line-height: 3.2rem;
+    text-transform: uppercase;
+}
+
+#hangmanHint {
+    font-size: 1.8rem;
+    color: rgba(255,215,0,0.75);
+    font-style: italic;
+    margin-bottom: 0.25rem;
+    min-height: 1.5em;
+}
+
+#hangmanMsg {
+    font-size: 2.4rem !important;
+    font-weight: bold;
+    min-height: 1.5em;
+    padding: 0.25rem !important;
+}
+
+#hangmanKeyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    max-width: 34rem;
+    margin: 1rem auto 0.75rem;
+}
+
+.hm-key {
+    font-family: var(--body-fonts);
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--burgundy);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+    margin: 0;
+}
+
+.hm-key:hover:not(:disabled) {
+    background-color: var(--burgundy);
+    color: var(--gold);
+}
+
+.hm-key:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.hm-key.hm-correct {
+    background-color: #4a9e5c;
+    color: var(--white);
+}
+
+.hm-key.hm-wrong {
+    background-color: #c0392b;
+    color: var(--white);
+}
+
+/* ---- Sudoku ---- */
+#sudokuControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem auto 1rem;
+    flex-wrap: wrap;
+}
+
+#sudokuControls label {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold);
+    margin: 0;
+    width: auto;
+    display: inline;
+}
+
+#sudokuControls select {
+    width: auto;
+    font-size: 2rem;
+    height: auto;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    background-color: var(--white);
+    border: 2px solid var(--gold);
+    color: var(--black);
+    cursor: pointer;
+    display: inline;
+}
+
+#sudokuGrid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+    max-width: 36rem;
+    margin: 0 auto 0.5rem;
+    border: 3px solid var(--gold);
+    padding: 2px;
+    background-color: var(--gold);
+}
+
+#sudokuGrid input {
+    width: 100%;
+    aspect-ratio: 1;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--header-fonts);
+    font-weight: bold;
+    border: 1px solid rgba(255,215,0,0.3);
+    background-color: rgba(255,255,255,0.92);
+    color: var(--burgundy);
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: background-color 0.15s;
+    -moz-appearance: textfield;
+}
+
+#sudokuGrid input::-webkit-inner-spin-button,
+#sudokuGrid input::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+#sudokuGrid input:focus {
+    background-color: var(--yellow);
+}
+
+#sudokuGrid input.given {
+    background-color: rgba(123,17,58,0.12);
+    color: var(--black);
+    font-weight: bold;
+    cursor: default;
+}
+
+#sudokuGrid input.error {
+    background-color: rgba(220,50,50,0.25);
+    color: #8B0000;
+}
+
+#sudokuGrid input.correct {
+    background-color: rgba(50,180,50,0.2);
+}
+
+/* Thick borders for 3x3 box separation */
+#sudokuGrid input.border-right  { border-right:  2px solid var(--burgundy); }
+#sudokuGrid input.border-bottom { border-bottom: 2px solid var(--burgundy); }
+
+#sudokuMsg {
+    font-size: 2.5rem !important;
+    min-height: 1.5em;
+    padding: 0.25rem !important;
+    font-weight: bold;
 }
 
 #coinScore {

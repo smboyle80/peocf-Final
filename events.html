@@ -13,10 +13,23 @@
             <h1>Chapter CF Fun Committee</h1>
             <h2>P.E.O. Arizona</h2>
             <p>Come join us for fun, fellowship, and connection</p>
-            <nav>
+            <div class="header-divider" aria-hidden="true">✦ &nbsp; ✦ &nbsp; ✦</div>
+                        <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#upcoming">Upcoming Events</a></li>
+                    <li class="nav-dropdown">
+                        <a href="index.html#gamesIntro" class="nav-parent">Games ▾</a>
+                        <ul class="nav-submenu">
+                            <li><a href="index.html#snakeEyes">Snake Eyes</a></li>
+                            <li><a href="index.html#magic8">Magic 8-Ball</a></li>
+                            <li><a href="index.html#guessing">Number Guess</a></li>
+                            <li><a href="index.html#coinFlip">Coin Flip</a></li>
+                            <li><a href="index.html#sudoku">Sudoku</a></li>
+                            <li><a href="mahjong.html">Mahjong</a></li>
+                            <li><a href="chess.html">Chess</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="members.html">Member Sign In</a></li>
                 </ul>
             </nav>
@@ -25,36 +38,36 @@
         <main id="eventsMain">
             <section id="upcoming">
                 <h2>Upcoming Events</h2>
-                <p>Click <strong>Register</strong> on any event to save your spot!</p>
+                <p>Details coming soon! Click <strong>Register</strong> on any event to save your spot!</p>
 
                 <div class="events-grid">
 
-                    <!-- Coffee Meetup -->
+                    <!-- Coffee Time -->
                     <article class="event-card" id="evt-coffee">
                         <div class="event-badge">Coffee</div>
                         <div class="event-icon">☕</div>
                         <h3>Coffee Time</h3>
                         <div class="event-meta">
-                            <span class="event-date">📅 April 5, 2026</span>
-                            <span class="event-time">⏰ 10:00 AM – 12:00 PM</span>
-                            <span class="event-location">📍 The Daily Grind Café, Scottsdale</span>
+                            <span class="event-date">📅 Date: TBD</span>
+                            <span class="event-time">⏰ Time: TBD</span>
+                            <span class="event-location">📍 Location: TBD</span>
                         </div>
-                        <p class="event-desc">Join your sisters for caffeine and conversation at our favorite local coffee spot. All are welcome — bring a friend!</p>
-                        <button class="register-btn" data-event="Coffee Time – April 5">Register Now</button>
+                        <p class="event-desc">Join your sisters for caffeine and conversation at a local coffee spot. All are welcome — bring a friend!</p>
+                        <button class="register-btn" data-event="Coffee Time">Register Now</button>
                     </article>
 
-                    <!-- Trivia Night -->
-                    <article class="event-card" id="evt-trivia">
-                        <div class="event-badge">Online</div>
-                        <div class="event-icon">🧠</div>
-                        <h3>Trivia Night</h3>
+                    <!-- Game Night -->
+                    <article class="event-card" id="evt-gamenight">
+                        <div class="event-badge">Games</div>
+                        <div class="event-icon">🎲</div>
+                        <h3>Game Night</h3>
                         <div class="event-meta">
-                            <span class="event-date">📅 April 8, 2026</span>
-                            <span class="event-time">⏰ 7:00 PM – 9:00 PM</span>
-                            <span class="event-location">💻 Virtual – Zoom Link Provided</span>
+                            <span class="event-date">📅 Date: TBD</span>
+                            <span class="event-time">⏰ Time: TBD</span>
+                            <span class="event-location">📍 Location: TBD</span>
                         </div>
-                        <p class="event-desc">Test your knowledge every second Tuesday online. Categories include history, pop culture, and P.E.O. fun facts!</p>
-                        <button class="register-btn" data-event="Trivia Night – April 8">Register Now</button>
+                        <p class="event-desc">A fun evening of games and laughter with your fellow sisters. Board games, card games, and good company!</p>
+                        <button class="register-btn" data-event="Game Night">Register Now</button>
                     </article>
 
                     <!-- Serving Together -->
@@ -63,40 +76,54 @@
                         <div class="event-icon">🤝</div>
                         <h3>Serving with Sisters</h3>
                         <div class="event-meta">
-                            <span class="event-date">📅 April 12, 2026</span>
-                            <span class="event-time">⏰ 9:00 AM – 1:00 PM</span>
-                            <span class="event-location">📍 Desert Mission Food Bank, Phoenix</span>
+                            <span class="event-date">📅 Date: TBD</span>
+                            <span class="event-time">⏰ Time: TBD</span>
+                            <span class="event-location">📍 Location: TBD</span>
                         </div>
                         <p class="event-desc">One Saturday a month, we roll up our sleeves and serve our community side by side. A rewarding morning with wonderful women.</p>
-                        <button class="register-btn" data-event="Serving with Sisters – April 12">Register Now</button>
+                        <button class="register-btn" data-event="Serving with Sisters">Register Now</button>
                     </article>
 
-                    <!-- Coffee Meetup May -->
-                    <article class="event-card" id="evt-coffee2">
-                        <div class="event-badge">Coffee</div>
-                        <div class="event-icon">☕</div>
-                        <h3>Coffee Time</h3>
+                    <!-- Dinner -->
+                    <article class="event-card" id="evt-dinner">
+                        <div class="event-badge">Dinner</div>
+                        <div class="event-icon">🍽️</div>
+                        <h3>Dinner Out</h3>
                         <div class="event-meta">
-                            <span class="event-date">📅 May 3, 2026</span>
-                            <span class="event-time">⏰ 10:00 AM – 12:00 PM</span>
-                            <span class="event-location">📍 Perk Up Coffee, Tempe</span>
+                            <span class="event-date">📅 Date: TBD</span>
+                            <span class="event-time">⏰ Time: TBD</span>
+                            <span class="event-location">📍 Location: TBD</span>
                         </div>
-                        <p class="event-desc">Our monthly coffee date moves to Tempe this month! New location, same great sisterhood. All welcome.</p>
-                        <button class="register-btn" data-event="Coffee Time – May 3">Register Now</button>
+                        <p class="event-desc">Gather around the table for a delicious dinner and great conversation. A wonderful chance to relax and connect with your sisters.</p>
+                        <button class="register-btn" data-event="Dinner Out">Register Now</button>
                     </article>
 
-                    <!-- Trivia Night May -->
-                    <article class="event-card" id="evt-trivia2">
-                        <div class="event-badge">Online</div>
-                        <div class="event-icon">🧠</div>
-                        <h3>Trivia Night</h3>
+                    <!-- Movie -->
+                    <article class="event-card" id="evt-movie">
+                        <div class="event-badge">Movie</div>
+                        <div class="event-icon">🎬</div>
+                        <h3>Movie Night</h3>
                         <div class="event-meta">
-                            <span class="event-date">📅 May 13, 2026</span>
-                            <span class="event-time">⏰ 7:00 PM – 9:00 PM</span>
-                            <span class="event-location">💻 Virtual – Zoom Link Provided</span>
+                            <span class="event-date">📅 Date: TBD</span>
+                            <span class="event-time">⏰ Time: TBD</span>
+                            <span class="event-location">📍 Location: TBD</span>
                         </div>
-                        <p class="event-desc">May's theme: Spring Fling! Categories include nature, travel, movies from the 80s, and more. Log in and play!</p>
-                        <button class="register-btn" data-event="Trivia Night – May 13">Register Now</button>
+                        <p class="event-desc">Grab your popcorn and join your sisters for a fun night at the movies. Film selection to be announced — stay tuned!</p>
+                        <button class="register-btn" data-event="Movie Night">Register Now</button>
+                    </article>
+
+                    <!-- Local Events -->
+                    <article class="event-card" id="evt-local">
+                        <div class="event-badge">Local</div>
+                        <div class="event-icon">⭐</div>
+                        <h3>Local Events</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 Date: TBD</span>
+                            <span class="event-time">⏰ Time: TBD</span>
+                            <span class="event-location">📍 Location: TBD</span>
+                        </div>
+                        <p class="event-desc">Explore what's happening around town together! From art shows to festivals, we'll find a local event to enjoy as a group.</p>
+                        <button class="register-btn" data-event="Local Events">Register Now</button>
                     </article>
 
                 </div>
@@ -137,7 +164,10 @@
         </div>
 
         <footer>
-            <p><span>P.E.O. Chapter CF</span> Copyright &copy;2026 - All Rights Reserved</p>
+            <p class="footer-motto">"We are sisters bound by a love of learning and a love of each other."</p>
+            <hr class="footer-divider" aria-hidden="true">
+            <p><span>P.E.O. Chapter CF &nbsp;·&nbsp; P.E.O. Arizona</span></p>
+            <p><span>Copyright &copy;2026 &nbsp;·&nbsp; All Rights Reserved</span></p>
         </footer>
 
         <script src="events.js" defer></script>

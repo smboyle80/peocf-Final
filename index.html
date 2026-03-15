@@ -16,10 +16,19 @@
             <div class="header-divider" aria-hidden="true">✦ &nbsp; ✦ &nbsp; ✦</div>
             <nav>
                 <ul>
-                    <li><a href="#snakeEyes">Snake Eyes</a></li>
-                    <li><a href="#magic8">Magic 8-Ball</a></li>
-                    <li><a href="#guessing">Number Guess</a></li>
-                    <li><a href="#coinFlip">Coin Flip</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#gamesIntro" class="nav-parent">Games ▾</a>
+                        <ul class="nav-submenu">
+                            <li><a href="#snakeEyes">Snake Eyes</a></li>
+                            <li><a href="#magic8">Magic 8-Ball</a></li>
+                            <li><a href="#guessing">Number Guess</a></li>
+                            <li><a href="#coinFlip">Coin Flip</a></li>
+                            <li><a href="#sudoku">Sudoku</a></li>
+                            <li><a href="mahjong.html">Mahjong</a></li>
+                            <li><a href="chess.html">Chess</a></li>
+                            <li><a href="#hangman">Hangman</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contact">Contact Us</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="members.html">Member Sign In</a></li>
@@ -29,7 +38,7 @@
         <main>
             <section id="gamesIntro">
                 <h2>Play a Game!</h2>
-                <p>Take a little break and have some fun with your sisters. We've got four games to keep you entertained — come back and play anytime!</p>
+                <p>Take a little break and have some fun with your sisters. We've got eight games to keep you entertained — <br>come back and play anytime!<br> Mahjong and Chess each have their own dedicated page. Find them under the Games menu.</p>
             </section>
             <div class="games-grid">
              <section id="snakeEyes">
@@ -73,6 +82,53 @@
                     <button id="tailsBtn">Tails</button>
                 </div>
                 <p id="coinScore">Wins: 0 &nbsp;|&nbsp; Losses: 0</p>
+            </section>
+
+            <!-- Sudoku -->
+            <section id="sudoku">
+                <h2>Sudoku</h2>
+                <p>Fill the grid so every row, column, and 3×3 box contains the digits 1–9.</p>
+                <div id="sudokuControls">
+                    <label for="sudokuDiff">Difficulty:</label>
+                    <select id="sudokuDiff">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div id="sudokuGrid"></div>
+                <p id="sudokuMsg">&nbsp;</p>
+                <div class="game-btns">
+                    <button id="sudokuCheck">Check</button>
+                    <button id="sudokuNew">New Puzzle</button>
+                </div>
+            </section>
+
+            <!-- Hangman -->
+            <section id="hangman">
+                <h2>Hangman</h2>
+                <p>Guess the hidden word one letter at a time. You have 6 wrong guesses before it's game over!</p>
+                <div id="hangmanDrawing">
+                    <svg id="hangmanSvg" viewBox="0 0 120 130" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Gallows (always visible) -->
+                        <line x1="10" y1="125" x2="110" y2="125" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="30" y1="125" x2="30" y2="10"  stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="30" y1="10"  x2="75" y2="10"  stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="75" y1="10"  x2="75" y2="25"  stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <!-- Body parts (hidden by default) -->
+                        <circle id="hm-head" cx="75" cy="35" r="10" stroke="currentColor" stroke-width="3" fill="none" class="hm-part" style="display:none"/>
+                        <line id="hm-body"   x1="75" y1="45" x2="75" y2="80" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="hm-part" style="display:none"/>
+                        <line id="hm-larm"   x1="75" y1="55" x2="55" y2="70" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="hm-part" style="display:none"/>
+                        <line id="hm-rarm"   x1="75" y1="55" x2="95" y2="70" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="hm-part" style="display:none"/>
+                        <line id="hm-lleg"   x1="75" y1="80" x2="55" y2="105" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="hm-part" style="display:none"/>
+                        <line id="hm-rleg"   x1="75" y1="80" x2="95" y2="105" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="hm-part" style="display:none"/>
+                    </svg>
+                </div>
+                <div id="hangmanWord"></div>
+                <div id="hangmanHint"></div>
+                <p id="hangmanMsg">&nbsp;</p>
+                <div id="hangmanKeyboard"></div>
+                <button id="hangmanNew">New Word</button>
             </section>
             </div>
             <section id="contact">

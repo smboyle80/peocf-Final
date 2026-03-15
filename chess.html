@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>P.E.O. Chapter CF - Member Sign In</title>
+        <title>P.E.O. Chapter CF - Chess</title>
         <link href="styles.css" rel="stylesheet">
-        <link href="members.css" rel="stylesheet">
+        <link href="chess.css" rel="stylesheet">
         <meta author="Susan Davis">
     </head>
     <body>
@@ -12,9 +12,9 @@
             <img src="Images/P.E.O. Primary Logo - PNG.png" alt="P.E.O. Logo">
             <h1>Chapter CF Fun Committee</h1>
             <h2>P.E.O. Arizona</h2>
-            <p>Member Access Portal</p>
+            <p>Come join us for fun, fellowship, and connection</p>
             <div class="header-divider" aria-hidden="true">✦ &nbsp; ✦ &nbsp; ✦</div>
-                        <nav>
+            <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li class="nav-dropdown">
@@ -35,36 +35,37 @@
             </nav>
         </header>
 
-        <main id="membersMain">
+        <main id="chessMain">
+            <section id="chessGame">
+                <h2>Chess</h2>
+                <p>Two-player chess — White goes first. Click a piece to select it, then click a highlighted square to move.</p>
 
-            <!-- Sign In Panel -->
-            <section id="memberArea" class="signin-section" aria-label="Member Sign In">
-                <div class="signin-card">
-                    <div class="signin-icon">🔐</div>
-                    <h2>Member Sign In</h2>
-                    <p class="signin-sub">Enter the chapter password to access announcements, the member directory, and chapter resources.</p>
+                <div id="chessInfo">
+                    <span id="chessTurn">White's Turn</span>
+                    <span id="chessStatus">&nbsp;</span>
+                </div>
 
-                    <div id="loginError" class="login-error" aria-live="polite" hidden>
-                        Incorrect password. Please try again.
+                <div id="chessLayout">
+                    <div id="chessBoardWrap">
+                        <div id="chessBoard"></div>
                     </div>
-
-                    <form id="signInForm" novalidate>
-                        <label for="password">Chapter Password</label>
-                        <div class="pw-wrap">
-                            <input type="password" id="password" name="password" required placeholder="Enter chapter password" autocomplete="current-password">
-                            <button type="button" id="togglePw" aria-label="Show password">👁</button>
+                    <div id="chessCaptured">
+                        <div class="captured-group">
+                            <p class="captured-label">White captured:</p>
+                            <div id="capturedByWhite"></div>
                         </div>
-                        <input type="submit" id="signInBtn" value="Sign In">
-                    </form>
+                        <div class="captured-group">
+                            <p class="captured-label">Black captured:</p>
+                            <div id="capturedByBlack"></div>
+                        </div>
+                    </div>
+                </div>
 
-                    <p class="forgot-link"><a href="#" onclick="showForgotMsg(); return false;">Forgot the password?</a></p>
-                    <p id="forgotMsg" class="forgot-msg" hidden>Please contact your chapter secretary to get the current password.</p>
+                <div class="game-btns" style="margin-top:1.5rem;">
+                    <button id="chessUndo">Undo</button>
+                    <button id="chessReset">New Game</button>
                 </div>
             </section>
-
-            <!-- Dashboard is built and injected here by members.js only after correct password -->
-            <div id="dashboardContainer"></div>
-
         </main>
 
         <footer>
@@ -74,6 +75,6 @@
             <p><span>Copyright &copy;2026 &nbsp;·&nbsp; All Rights Reserved</span></p>
         </footer>
 
-        <script src="members.js" defer></script>
+        <script src="chess.js" defer></script>
     </body>
 </html>
