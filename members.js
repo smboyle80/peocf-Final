@@ -27,16 +27,16 @@ function buildDashboard() {
             <h3>📣 Chapter Announcements</h3>
             <ul class="announce-list">
                 <li>
-                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 17 at 6:30 PM. Please RSVP by April 14.
+                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 20 at 12:00 PM. Please RSVP by April 14.
                 </li>
                 <li>
-                    <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship by April 30.
+                    <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
                 </li>
                 <li>
-                    <strong>New Member Welcome</strong> – Please join us in welcoming our newest sister, Jane Monroe, to Chapter CF!
+                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Harriett Agius on March 31st!
                 </li>
                 <li>
-                    <strong>Trivia Night High Score</strong> – Congratulations to Team &ldquo;Quiz Queens&rdquo; for topping last month's scoreboard! 🏆
+                    <strong>Monthly Breakfast</strong> – Breakfast will be held April 4th at Kiss the Cook, 4915 W. Glendale Ave. Please remember to RSVP and bring a friend! 
                 </li>
             </ul>
         </div>
@@ -89,17 +89,17 @@ function buildDashboard() {
                 <li>
                     <span class="resource-icon">📄</span>
                     <span>Meeting Minutes – March 2026</span>
-                    <a href="#" class="resource-link">View</a>
+                    <a href="https://drive.google.com/file/d/18X-iN5THjmay11xToQhxM47ilSVxJ_KS/view?usp=drive_link" target="_blank" rel="noopener" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
-                    <span>P.E.O. STAR Scholarship Application</span>
-                    <a href="#" class="resource-link">Download</a>
+                    <span>Meeting Minutes Archive</span>
+                    <a href="https://drive.google.com/drive/folders/1_6kNK-p9-A7d8wwArqJQMKt4Q6-0VjMz?usp=sharing" target="_blank" rel="noopener" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
                     <span>Chapter CF Fun Committee Calendar 2026</span>
-                    <a href="#" class="resource-link">Download</a>
+                    <a href="https://calendar.google.com/calendar/u/0?cid=cGVvY2hhcHRlcmNmQGdtYWlsLmNvbQ" target="_blank" rel="noopener" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">🔗</span>
