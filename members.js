@@ -23,26 +23,26 @@ function buildDashboard() {
         </div>
 
         <!-- Announcements -->
-        <div class="dash-card">
+        <div class="dash-card" id="announcements">
             <h3>📣 Chapter Announcements</h3>
             <ul class="announce-list">
                 <li>
-                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 20 at 12:00 PM. Please RSVP by April 14.
+                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 17 at 6:30 PM. Please RSVP by April 14.
                 </li>
                 <li>
-                    <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
+                    <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship by April 30.
                 </li>
                 <li>
-                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Harriett Agius on March 31st!
+                    <strong>New Member Welcome</strong> – Please join us in welcoming our newest sister, Jane Monroe, to Chapter CF!
                 </li>
                 <li>
-                    <strong>Monthly Breakfast</strong> – Breakfast will be held April 4th at Kiss the Cook, 4915 W. Glendale Ave. Please remember to RSVP and bring a friend! 
+                    <strong>Trivia Night High Score</strong> – Congratulations to Team &ldquo;Quiz Queens&rdquo; for topping last month's scoreboard! 🏆
                 </li>
             </ul>
         </div>
 
         <!-- Member Directory -->
-        <div class="dash-card">
+        <div class="dash-card" id="memberDirectory">
             <h3>👥 Member Directory</h3>
             <p class="dash-note">Visible to members only — please keep this information confidential.</p>
             <table class="event-table">
@@ -73,13 +73,12 @@ function buildDashboard() {
                     <tr><td>Erica Eggen</td><td>erica.eggen@gmail.com</td><td>(602) 321-1063</td></tr>
                     <tr><td>Danille Willars</td><td>danwill458@gmail.com</td><td>(480) 000-0000</td></tr>
                     <tr><td>Jamie King</td><td>jamieking@kingdirectemail.com</td><td>(602) 000-0000</td></tr>
-                    
                 </tbody>
             </table>
         </div>
 
         <!-- Resources -->
-        <div class="dash-card">
+        <div class="dash-card" id="resources">
             <h3>📁 Chapter Resources</h3>
             <ul class="resource-list">
                 <li>
@@ -94,7 +93,7 @@ function buildDashboard() {
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
-                    <span>Meeting Minutes Archive</span>
+                    <span>P.E.O. STAR Scholarship Application</span>
                     <a href="#" class="resource-link">Download</a>
                 </li>
                 <li>

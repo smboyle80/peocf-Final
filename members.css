@@ -442,15 +442,30 @@
     .dashboard-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
         gap: 2rem;
         align-items: start;
     }
 
     .dashboard-header {
         grid-column: 1/-1;
+        grid-row: 1;
     }
 
     #announcements {
         grid-column: 1/-1;
+        grid-row: 2;
+    }
+
+    #memberDirectory {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: start;
+    }
+
+    #resources {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: start;
     }
 }
