@@ -4,7 +4,7 @@
    CHAPTER PASSWORD
    To change the password, edit the value below.
    ================================================ */
-const CHAPTER_PASSWORD = "peo2026";
+const CHAPTER_PASSWORD = "peoCF1979";
 
 /* ================================================
    DASHBOARD CONTENT
