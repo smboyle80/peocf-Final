@@ -4,7 +4,7 @@
    CHAPTER PASSWORD
    To change the password, edit the value below.
    ================================================ */
-const CHAPTER_PASSWORD = "peo2026";
+const CHAPTER_PASSWORD = "peoCF1979";
 
 /* ================================================
    DASHBOARD CONTENT
@@ -68,8 +68,8 @@ function buildDashboard() {
                     <tr><td>Kelly Swicher</td><td>swicherk@gmail.com</td><td>(623) 755-4585</td></tr>
                     <tr><td>Mylla Edwards</td><td>milenabaraujo@gmail.com</td><td>(623) 302-2058</td></tr>
                     <tr><td>Erica Eggen</td><td>erica.eggen@gmail.com</td><td>(602) 321-1063</td></tr>
-                    <tr><td>Danille Willars</td><td>danwill458@gmail.com</td><td>(480) 000-0000</td></tr>
-                    <tr><td>Jamie King</td><td>jamieking@kingdirectemail.com</td><td>(602) 000-0000</td></tr>
+                    <tr><td>Danille Willars</td><td>danwill458@gmail.com</td><td>(480) 295-5033</td></tr>
+                    <tr><td>Jamie King</td><td>jamieking@kingdirectemail.com</td><td>(937) 307-6920</td></tr>
                 </tbody>
             </table>
         </div>
@@ -80,8 +80,8 @@ function buildDashboard() {
             <ul class="resource-list">
                 <li>
                     <span class="resource-icon">📄</span>
-                    <span>Chapter CF Bylaws (2025)</span>
-                    <a href="#" class="resource-link">View</a>
+                    <span>Chapter CF Digital Yearbook (2026)</span>
+                    <a href="https://drive.google.com/file/d/1v3-cbaTFrrcN2Qj4CHt2YfYrJFNvkwhK/view?usp=drive_link" target="_blank" rel="noopener" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
