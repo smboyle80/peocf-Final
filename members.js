@@ -27,16 +27,16 @@ function buildDashboard() {
             <h3>📣 Chapter Announcements</h3>
             <ul class="announce-list">
                 <li>
-                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 17 at 6:30 PM. Please RSVP by April 14.
+                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 20 at 12:00 PM. Please RSVP by April 14.
                 </li>
                 <li>
-                    <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship by April 30.
+                    <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
                 </li>
                 <li>
-                    <strong>New Member Welcome</strong> – Please join us in welcoming our newest sister, Jane Monroe, to Chapter CF!
+                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Harriett Agius on March 31st!
                 </li>
                 <li>
-                    <strong>Trivia Night High Score</strong> – Congratulations to Team &ldquo;Quiz Queens&rdquo; for topping last month's scoreboard! 🏆
+                    <strong>Monthly Breakfast</strong> – Breakfast will be held April 4th at Kiss the Cook, 4915 W. Glendale Ave. Please remember to RSVP and bring a friend! 
                 </li>
             </ul>
         </div>
@@ -57,13 +57,10 @@ function buildDashboard() {
                     <tr><td>Harriett Agius</td><td>capeleka4@gmail.com</td><td>(602) 439-1399</td></tr>
                     <tr><td>Marilyn Ashworth</td><td>mareashworth@cox.net</td><td>(602) 369-2525</td></tr>
                     <tr><td>Susan Davis</td><td>smboyle80@gmail.com</td><td>(480) 209-5651</td></tr>
-                    <tr><td>Barbara DeRoma</td><td>bcderoma3@gmail.com</td><td>(602) 550-2092</td></tr>
                     <tr><td>Mary Ellen Edwards</td><td>maryellenedwards@cox.net</td><td>(602) 370-0852</td></tr>
                     <tr><td>Dixy Iglesias</td><td>dixyiglesias@gmail.com</td><td>(206) 356-4110</td></tr>
-                    <tr><td>Sally Lawrence</td><td>stickeylip@gmail.com</td><td>(602) 739-7259</td></tr>
                     <tr><td>Juneal Lipscomb</td><td>junealsl@gmail.com</td><td>(602) 885-2742</td></tr>
                     <tr><td>Tracy Milanese</td><td>tracygmilanese@gmail.com</td><td>(703) 987-8332</td></tr>
-                    <tr><td>Holly Murphy</td><td>handerson24@hotmail.com</td><td>(623) 293-2473</td></tr>
                     <tr><td>Malyssa Paul</td><td>malyssadunson@gmail.com</td><td>(623) 570-3603</td></tr>
                     <tr><td>Julie Rill</td><td>rilljulie@gmail.com</td><td>(505) 660-1777</td></tr>
                     <tr><td>Ann Schaar</td><td>aschaar@cox.net</td><td>(623) 979-3953</td></tr>
@@ -89,17 +86,17 @@ function buildDashboard() {
                 <li>
                     <span class="resource-icon">📄</span>
                     <span>Meeting Minutes – March 2026</span>
-                    <a href="#" class="resource-link">View</a>
+                    <a href="https://drive.google.com/file/d/18X-iN5THjmay11xToQhxM47ilSVxJ_KS/view?usp=drive_link" target="_blank" rel="noopener" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
-                    <span>P.E.O. STAR Scholarship Application</span>
-                    <a href="#" class="resource-link">Download</a>
+                    <span>Meeting Minutes Archive</span>
+                    <a href="https://drive.google.com/drive/folders/1_6kNK-p9-A7d8wwArqJQMKt4Q6-0VjMz?usp=sharing" target="_blank" rel="noopener" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
                     <span>Chapter CF Fun Committee Calendar 2026</span>
-                    <a href="#" class="resource-link">Download</a>
+                    <a href="https://calendar.google.com/calendar/u/0?cid=cGVvY2hhcHRlcmNmQGdtYWlsLmNvbQ" target="_blank" rel="noopener" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">🔗</span>
