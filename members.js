@@ -4,7 +4,7 @@
    CHAPTER PASSWORD
    To change the password, edit the value below.
    ================================================ */
-const CHAPTER_PASSWORD = "peoCF1979";
+const CHAPTER_PASSWORD = "peo2026";
 
 /* ================================================
    DASHBOARD CONTENT
@@ -68,8 +68,8 @@ function buildDashboard() {
                     <tr><td>Kelly Swicher</td><td>swicherk@gmail.com</td><td>(623) 755-4585</td></tr>
                     <tr><td>Mylla Edwards</td><td>milenabaraujo@gmail.com</td><td>(623) 302-2058</td></tr>
                     <tr><td>Erica Eggen</td><td>erica.eggen@gmail.com</td><td>(602) 321-1063</td></tr>
-                    <tr><td>Danille Willars</td><td>danwill458@gmail.com</td><td>(480) 295-5033</td></tr>
-                    <tr><td>Jamie King</td><td>jamieking@kingdirectemail.com</td><td>(937) 307-6920</td></tr>
+                    <tr><td>Danille Willars</td><td>danwill458@gmail.com</td><td>(480) 000-0000</td></tr>
+                    <tr><td>Jamie King</td><td>jamieking@kingdirectemail.com</td><td>(602) 000-0000</td></tr>
                 </tbody>
             </table>
         </div>
@@ -80,8 +80,8 @@ function buildDashboard() {
             <ul class="resource-list">
                 <li>
                     <span class="resource-icon">📄</span>
-                    <span>Chapter CF Digital Yearbook (2026)</span>
-                    <a href="https://drive.google.com/file/d/1v3-cbaTFrrcN2Qj4CHt2YfYrJFNvkwhK/view?usp=drive_link" target="_blank" rel="noopener" class="resource-link">View</a>
+                    <span>Chapter CF Bylaws (2025)</span>
+                    <a href="#" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
@@ -104,6 +104,33 @@ function buildDashboard() {
                     <a href="https://www.peointernational.org" target="_blank" rel="noopener" class="resource-link">Visit</a>
                 </li>
             </ul>
+        </div>
+
+        <!-- Prayer Requests -->
+        <div class="dash-card" id="prayerRequests">
+            <h3>🙏 Prayer Requests</h3>
+            <p class="dash-note">Share a prayer request with your sisters. You may include your name or submit anonymously.</p>
+
+            <form id="prayerForm" class="prayer-form">
+                <div class="prayer-input-row">
+                    <label for="prayerName">Your Name</label>
+                    <div class="prayer-anon-row">
+                        <input type="text" id="prayerName" placeholder="First name or leave blank">
+                        <label class="anon-label">
+                            <input type="checkbox" id="prayerAnon"> Submit anonymously
+                        </label>
+                    </div>
+                </div>
+                <div class="prayer-input-row">
+                    <label for="prayerText">Prayer Request*</label>
+                    <textarea id="prayerText" placeholder="Share your prayer request here..." required></textarea>
+                </div>
+                <button type="submit" class="prayer-submit-btn">Add Request</button>
+            </form>
+
+            <div id="prayerList" class="prayer-list">
+                <p class="prayer-empty" id="prayerEmpty">No prayer requests yet — be the first to share one.</p>
+            </div>
         </div>
 
     </section>`;
@@ -138,6 +165,12 @@ signInForm.addEventListener("submit", function(e) {
         // Wire up the sign-out button that now exists in the DOM
         document.getElementById("signOutBtn").addEventListener("click", signOut);
 
+        // Wire up prayer request form
+        document.getElementById("prayerForm").addEventListener("submit", submitPrayer);
+
+        // Restore any saved prayer requests for this session
+        renderPrayers();
+
         window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
         loginError.hidden = false;
@@ -147,11 +180,81 @@ signInForm.addEventListener("submit", function(e) {
 });
 
 /* ================================================
+   PRAYER REQUESTS
+   ================================================ */
+let prayerRequests = [];
+
+function submitPrayer(e) {
+    e.preventDefault();
+    const nameInput = document.getElementById("prayerName");
+    const anonCheck = document.getElementById("prayerAnon");
+    const textInput = document.getElementById("prayerText");
+
+    const text = textInput.value.trim();
+    if (!text) return;
+
+    const isAnon = anonCheck.checked;
+    const name = isAnon || !nameInput.value.trim() ? "Anonymous" : nameInput.value.trim();
+
+    const now = new Date();
+    const dateStr = now.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+
+    prayerRequests.unshift({ name, text, date: dateStr });
+
+    // Reset form
+    textInput.value = "";
+    nameInput.value = "";
+    anonCheck.checked = false;
+
+    renderPrayers();
+}
+
+function renderPrayers() {
+    const list = document.getElementById("prayerList");
+    const empty = document.getElementById("prayerEmpty");
+    if (!list) return;
+
+    // Remove existing prayer items (keep the empty message)
+    list.querySelectorAll(".prayer-item").forEach(el => el.remove());
+
+    if (prayerRequests.length === 0) {
+        if (empty) empty.style.display = "";
+        return;
+    }
+
+    if (empty) empty.style.display = "none";
+
+    prayerRequests.forEach(function(req, i) {
+        const item = document.createElement("div");
+        item.className = "prayer-item";
+        item.innerHTML = `
+            <div class="prayer-meta">
+                <span class="prayer-author">${req.name === "Anonymous" ? "🕊️ Anonymous" : "🙏 " + req.name}</span>
+                <span class="prayer-date">${req.date}</span>
+                <button class="prayer-delete" data-index="${i}" aria-label="Remove request">✕</button>
+            </div>
+            <p class="prayer-text">${req.text}</p>
+        `;
+        list.appendChild(item);
+    });
+
+    // Wire up delete buttons
+    list.querySelectorAll(".prayer-delete").forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            const idx = parseInt(btn.getAttribute("data-index"));
+            prayerRequests.splice(idx, 1);
+            renderPrayers();
+        });
+    });
+}
+
+/* ================================================
    SIGN OUT — clears dashboard from DOM entirely
    ================================================ */
 function signOut() {
     // Remove the dashboard HTML from the page completely
     dashboardContainer.innerHTML = "";
+    prayerRequests = [];
     signinSection.hidden = false;
     signInForm.reset();
     loginError.hidden = true;
