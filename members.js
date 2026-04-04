@@ -105,7 +105,7 @@ function buildDashboard() {
                 <li>
                     <span class="resource-icon">🔗</span>
                     <span>P.E.O. Arizona Website</span>
-                    <a href="https://azpeo.org/" target="_blank" rel="noopener" class="reso
+                    <a href="https://azpeo.org/" target="_blank" rel="noopener" class="resource-link">Visit</a>
                 </li>
             </ul>
         </div>
