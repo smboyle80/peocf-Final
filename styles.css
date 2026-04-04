@@ -227,7 +227,7 @@ nav > ul > li {
 .nav-submenu li a {
     display: block;
     color: var(--burgundy);
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 0.6rem 1.4rem;
     text-align: left;
     border-radius: 0;
@@ -256,7 +256,7 @@ nav a {
     display: block;
     color: var(--burgundy);
     padding: 0.6rem 0.4rem;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     border-radius: 3px;
     transition: background-color 0.18s, color 0.18s;
 }
