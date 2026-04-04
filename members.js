@@ -33,10 +33,13 @@ function buildDashboard() {
                     <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
                 </li>
                 <li>
-                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Harriett Agius on March 31st!
+                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Dixy Iglesias on May 2nd!
                 </li>
                 <li>
-                    <strong>Monthly Breakfast</strong> – Breakfast will be held April 4th at Kiss the Cook, 4915 W. Glendale Ave. Please remember to RSVP and bring a friend! 
+                    <strong>Graduation</strong> – Susan Davis' Undergraduate Commencement will be held May 11th at 7:30 PM at Frank Cush Field at Mountain America Stadium.  
+                </li>
+                <li>
+                    <strong>Monthly Breakfast</strong> – Breakfast will be held May 2nd at Mimi's Cafe, 7450 W Bell Rd. Please remember to RSVP and bring a friend! 
                 </li>
             </ul>
         </div>
