@@ -27,7 +27,7 @@ function buildDashboard() {
             <h3>📣 Chapter Announcements</h3>
             <ul class="announce-list">
                 <li>
-                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 20 at 12:00 PM. Please RSVP by April 14.
+                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 20 at 12:00 PM at Cross Roads UMC. Please RSVP by April 14.
                 </li>
                 <li>
                     <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
