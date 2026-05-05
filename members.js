@@ -27,19 +27,19 @@ function buildDashboard() {
             <h3>📣 Chapter Announcements</h3>
             <ul class="announce-list">
                 <li>
-                    <strong>April Meeting Reminder</strong> – Our chapter meeting is April 20 at 12:00 PM at Cross Roads UMC. Please RSVP by April 14.
+                    <strong>April Meeting Reminder</strong> – Our chapter meeting is May 18th at 12:00 PM at Cross Roads UMC. Please RSVP by May 12th.
                 </li>
                 <li>
                     <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
                 </li>
                 <li>
-                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Dixy Iglesias on May 2nd!
+                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Kelly Swicher on June 29th!
                 </li>
                 <li>
                     <strong>Graduation</strong> – Susan Davis' Undergraduate Commencement will be held May 11th at 7:30 PM at Frank Cush Field at Mountain America Stadium.  
                 </li>
                 <li>
-                    <strong>Monthly Breakfast</strong> – Breakfast will be held May 2nd at Mimi's Cafe, 7450 W Bell Rd. Please remember to RSVP and bring a friend! 
+                    <strong>Monthly Breakfast</strong> – Breakfast will be held June 6th at First Watch, 9645 N Black Canyon Hwy. Please remember to RSVP and bring a friend! 
                 </li>
             </ul>
         </div>
