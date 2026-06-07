@@ -27,7 +27,7 @@ function buildDashboard() {
             <h3>📣 Chapter Announcements</h3>
             <ul class="announce-list">
                 <li>
-                    <strong>April Meeting Reminder</strong> – Our chapter meeting is May 18th at 12:00 PM at Cross Roads UMC. Please RSVP by May 12th.
+                    <strong>June Meeting Reminder</strong> – Our chapter meeting is June 15th at 12:00 PM. Please RSVP by June 12th.
                 </li>
                 <li>
                     <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
@@ -36,10 +36,7 @@ function buildDashboard() {
                     <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Kelly Swicher on June 29th!
                 </li>
                 <li>
-                    <strong>Graduation</strong> – Susan Davis' Undergraduate Commencement will be held May 11th at 7:30 PM at Frank Cush Field at Mountain America Stadium.  
-                </li>
-                <li>
-                    <strong>Monthly Breakfast</strong> – Breakfast will be held June 6th at First Watch, 9645 N Black Canyon Hwy. Please remember to RSVP and bring a friend! 
+                    <strong>Monthly Breakfast</strong> – Breakfast will be held July 11th. Location TBD. Please remember to RSVP and bring a friend! 
                 </li>
             </ul>
         </div>
@@ -88,8 +85,8 @@ function buildDashboard() {
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
-                    <span>Meeting Minutes – March 2026</span>
-                    <a href="https://drive.google.com/file/d/18X-iN5THjmay11xToQhxM47ilSVxJ_KS/view?usp=drive_link" target="_blank" rel="noopener" class="resource-link">View</a>
+                    <span>Meeting Minutes – May 2026</span>
+                    <a href="https://drive.google.com/file/d/1nhicYai-QgzK43sLoHien5ri1Wyjm40s/view?usp=drive_link" target="_blank" rel="noopener" class="resource-link">View</a>
                 </li>
                 <li>
                     <span class="resource-icon">📄</span>
