@@ -36,7 +36,7 @@ function buildDashboard() {
                     <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Kelly Swicher on June 29th!
                 </li>
                 <li>
-                    <strong>Monthly Breakfast</strong> – Breakfast will be held July 11th. Location TBD. Please remember to RSVP and bring a friend! 
+                    <strong>Monthly Breakfast</strong> – Breakfast will be held July 11th. Location The Cracked Egg - 3422 W Glendale Ave, Phoenix, AZ 85051. Please remember to RSVP and bring a friend! 
                 </li>
             </ul>
         </div>
