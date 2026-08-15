@@ -27,16 +27,16 @@ function buildDashboard() {
             <h3>📣 Chapter Announcements</h3>
             <ul class="announce-list">
                 <li>
-                    <strong>June Meeting Reminder</strong> – Our chapter meeting is June 15th at 12:00 PM. Please RSVP by June 12th.
+                    <strong>June Meeting Reminder</strong> – Our chapter meeting is August 17th at 12:00 PM. Please RSVP by August 14th.
                 </li>
                 <li>
                     <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
                 </li>
                 <li>
-                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Kelly Swicher on June 29th!
+                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Mary Ellen on August 7th!
                 </li>
                 <li>
-                    <strong>Monthly Breakfast</strong> – Breakfast will be held July 11th. Location The Cracked Egg - 3422 W Glendale Ave, Phoenix, AZ 85051. Please remember to RSVP and bring a friend! 
+                    <strong>Monthly Breakfast</strong> – Breakfast will be held September 5th. Location Biscuits Cafe, 310 E Bell Rd, Phoenix. Please remember to RSVP and bring a friend! 
                 </li>
             </ul>
         </div>
