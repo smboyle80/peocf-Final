@@ -27,16 +27,16 @@ function buildDashboard() {
             <h3>📣 Chapter Announcements</h3>
             <ul class="announce-list">
                 <li>
-                    <strong>June Meeting Reminder</strong> – Our chapter meeting is August 17th at 12:00 PM. Please RSVP by August 14th.
+                    <strong>June Meeting Reminder</strong> – Our chapter meeting is October 19th at 12:00 PM. Please RSVP.
                 </li>
                 <li>
                     <strong>Scholarship Nominations Open</strong> – Nominate a deserving woman for our P.E.O. STAR Scholarship.
                 </li>
                 <li>
-                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Mary Ellen on August 7th!
+                    <strong>Happy Birthday</strong> – Please join us in sending birthday wishes to Susan Davis on December 28th!
                 </li>
                 <li>
-                    <strong>Monthly Breakfast</strong> – Breakfast will be held September 5th. Location Biscuits Cafe, 310 E Bell Rd, Phoenix. Please remember to RSVP and bring a friend! 
+                    <strong>Monthly Breakfast</strong> – Breakfast will be held November 7th. Location Kiss the Cook, 4915 W Glendale. Please remember to RSVP and bring a friend! 
                 </li>
             </ul>
         </div>
@@ -54,7 +54,7 @@ function buildDashboard() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Harriett Agius</td><td>capeleka4@gmail.com</td><td>(602) 439-1399</td></tr>
+                    <tr><td>Harriet Agius</td><td>capeleka4@gmail.com</td><td>(602) 439-1399</td></tr>
                     <tr><td>Marilyn Ashworth</td><td>mareashworth@cox.net</td><td>(602) 369-2525</td></tr>
                     <tr><td>Susan Davis</td><td>smboyle80@gmail.com</td><td>(480) 209-5651</td></tr>
                     <tr><td>Mary Ellen Edwards</td><td>maryellenedwards@cox.net</td><td>(602) 370-0852</td></tr>
